@@ -74,12 +74,19 @@ function agregarAlCarrito(nombre, precio, stock) {
     carrito.push(producto);
   }
 
+
   // Actualizar el carrito visualmente
   actualizarCarritoVisual();
 
   // Mostrar automáticamente el carrito después de agregar un producto
   mostrarCarrito();
+
+  // Mostrar mensaje de confirmación con el nombre del producto
+  alert(`${nombre} ha sido agregado al carrito correctamente.`);
 }
+
+
+
 
 function actualizarCarritoVisual() {
   var listaCarrito = document.getElementById("lista-carrito");
@@ -185,17 +192,18 @@ function comprarCarrito() {
   }
 
   // Crear el mensaje con los detalles de la compra
-  var mensaje = "Resumen de la compra:\n\n";
-for (var i = 0; i < itemsCarrito.length; i++) {
-  mensaje += itemsCarrito[i].textContent + "\n";
-}
-var total = document.getElementById("total-carrito").textContent;
-mensaje += "\nTotal: " + total;
+  var mensaje = "¡Hola! Te comparto el resumen de tu compra:\n\n";
+  for (var i = 0; i < itemsCarrito.length; i++) {
+    mensaje += `- ${itemsCarrito[i].textContent.trim()} \n`;
+  }
 
-var enlaceWhatsApp = "https://api.whatsapp.com/send/?phone=543876550649&text=" + encodeURIComponent(mensaje);
+  var total = document.getElementById("total-carrito").textContent;
+  mensaje += `\nTotal: ${total}`;
 
+  var enlaceWhatsApp = "https://api.whatsapp.com/send/?phone=543876550649&text=" + encodeURIComponent(mensaje);
 
   // Abrir el enlace de WhatsApp
   window.location.href = enlaceWhatsApp;
 }
+
 
