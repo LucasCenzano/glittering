@@ -192,7 +192,7 @@ function comprarCarrito() {
   }
 
   // Crear el mensaje con los detalles de la compra
-  var mensaje = "¡Hola! Te comparto el resumen de tu compra:\n\n";
+  var mensaje = "¡Hola! Te comparto el resumen de la compra:\n\n";
   for (var i = 0; i < itemsCarrito.length; i++) {
     mensaje += `- ${itemsCarrito[i].textContent.trim()} \n`;
   }
