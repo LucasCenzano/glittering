@@ -1,0 +1,308 @@
+/* Estilos para los botones de WhatsApp e Instagram */
+.whatsapp,
+.instagram {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgb(255, 255, 255);
+}
+
+.whatsapp img,
+.instagram img {
+  width: 20px;
+  height: 20px;
+}
+
+.whatsapp {
+  right: 10px;
+  background-color: #ffffff;
+}
+
+.instagram {
+  left: 10px;
+  background-color: #ffffff;
+}
+
+.whatsapp:hover,
+.instagram:hover {
+  opacity: 0.7;
+}
+
+/* Estilos para el nombre Glittering.ok */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nombre {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dot {
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #FF69B4;
+}
+
+.ok {
+  font-size: 40px;
+  color: #FF69B4;
+}
+
+.frase {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 1px;
+  color: #FF69B4;
+}
+
+@keyframes brillo-animation {
+  0% {
+    color: #FF69B4;
+  }
+  50% {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #FF69B4;
+  }
+  100% {
+    color: #FF69B4;
+  }
+}
+
+.brillo {
+  animation: brillo-animation 2s infinite;
+}
+
+#carrito-icon {
+  font-size: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#total-carrito {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  
+}
+
+#carrito-popup {
+  position: left;
+  top: 40px;
+  right: 0;
+  width: auto;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+#carrito-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+#carrito-popup p {
+  text-align: left;
+  margin-left: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+#carrito-popup button {
+  background: none;
+  border: none;
+  font-size: 12px; /* Tamaño de la fuente para hacer la cruz más pequeña */
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+}
+
+#carrito-popup button.cerrar-carrito {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+#carrito-popup button.comprar-carrito {
+  text-align: right;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+
+#carrito-container:hover #carrito-popup {
+  display: block;
+}
+
+/* Agregar estos estilos al final de tu CSS existente */
+
+/* Estilo para botones de aumentar y disminuir cantidad en el carrito */
+#lista-carrito button {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+#lista-carrito button:hover {
+  background-color: #f0f0f0;
+}
+
+.producto {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-producto button {
+  margin-top: 10px; /* Espacio entre la información del producto y el botón */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FF69B4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.info-producto button:hover {
+  background-color: #FF4981;
+}
+
+.nombre-producto {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+
+
+.imagenes img {
+  max-width: 30%; /* Ajusta el ancho máximo según tus necesidades */
+  height: 25%;
+  border-radius: 10px;
+  margin: 0 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.info-producto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 20px;
+  color: #000000;
+}
+
+.stock {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.stock-cantidad {
+  font-weight: bold;
+  color:#FF69B4;
+  margin-left: 5px;
+}
+
+.stock-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+
+/* Efecto al pasar el cursor sobre las imágenes */
+.imagenes img:hover {
+transform: scale(1.5);
+}
+
+/* Estilos para el buscador de productos */
+.buscar-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.buscar-form input[type="text"] {
+  padding: 5px;
+  border: 0.3px solid #ccc;
+  border-radius: 50px;
+}
+
+.buscar-form button {
+  background-color: transparent;
+  border: none;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.buscar-form button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+  @media (min-width: 769px) {
+    /* Aplicar estilos específicos para pantallas más grandes, por ejemplo, escritorio */
+    .imagenes img {
+      max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+    }
+  }
+  .imagenes img {
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    margin: 5px 0;
+  }
+
+
+.footer {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+
+
+
