@@ -80,9 +80,6 @@ function agregarAlCarrito(nombre, precio, stock) {
 
   // Mostrar automáticamente el carrito después de agregar un producto
   mostrarCarrito();
-
-  // Mostrar mensaje de confirmación con el nombre del producto
-  alert(`${nombre} ha sido agregado al carrito correctamente.`);
 }
 
 
