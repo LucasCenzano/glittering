@@ -1,4 +1,52 @@
 /* Estilos para los botones de WhatsApp e Instagram */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Estilos para imágenes en pantallas más pequeñas (móviles) */
+@media screen and (max-width: 767px) {
+  .imagenes img {
+    max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible */
+    height: auto;
+    margin: 5px 0;
+    border-radius: 0; /* Otra modificación según tus necesidades */
+  }
+
+  /* Eliminar el efecto de escala al pasar el cursor en pantallas más pequeñas */
+  .imagenes img:hover {
+    transform: none;
+  }
+
+  /* Apilar imágenes una debajo de la otra en pantallas más pequeñas */
+  .imagenes {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para las imágenes en pantallas más grandes (escritorio) */
+@media screen and (min-width: 768px) {
+  .imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .imagenes img {
+    max-width: 30%; /* Ajusta el ancho máximo según tus necesidades */
+    height: 25%;
+    border-radius: 10px;
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Efecto al pasar el cursor sobre las imágenes */
+  .imagenes img:hover {
+    transform: scale(1.5);
+  }
+}
+
 .whatsapp,
 .instagram {
   position: fixed;
@@ -93,9 +141,11 @@
 }
 
 #carrito-icon {
+  position: fixed;
   font-size: 25px;
   margin-right: 5px;
   cursor: pointer;
+  z-index: 1000; /* Asegura que el carrito esté por encima de otros elementos */
 }
 
 #total-carrito {
@@ -105,15 +155,15 @@
 }
 
 #carrito-popup {
-  position: left;
+  position: fixed;
   top: 40px;
-  right: 0;
   width: auto;
   border: 1.5px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 1;
+  background-color: white;
 }
 #carrito-popup ul {
   list-style: none;
@@ -182,11 +232,11 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 100%; /* Añade esta propiedad */
+  box-sizing: border-box; /* Añade esta propiedad para que el ancho incluya el padding */
+  margin: 0 auto; /* Añade esta propiedad para centrar el botón */
 }
 
-.info-producto button:hover {
-  background-color: #FF4981;
-}
 
 .nombre-producto {
   font-family: Arial, sans-serif;
@@ -219,6 +269,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center; /* Añade esta propiedad para centrar el texto */
   margin-bottom: 10px;
 }
 
@@ -253,11 +304,12 @@ transform: scale(1.5);
 
 /* Estilos para el buscador de productos */
 .buscar-form {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   display: flex;
   align-items: center;
+  z-index: 1000; /* Asegura que la barra de búsqueda esté por encima de otros elementos */
 }
 
 .buscar-form input[type="text"] {
@@ -279,12 +331,6 @@ transform: scale(1.5);
 }
 
 
-  @media (min-width: 769px) {
-    /* Aplicar estilos específicos para pantallas más grandes, por ejemplo, escritorio */
-    .imagenes img {
-      max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
-    }
-  }
   .imagenes img {
     width: 100%;
     max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
@@ -302,7 +348,5 @@ transform: scale(1.5);
 .footer p {
   margin-bottom: 10px;
 }
-
-
 
 
