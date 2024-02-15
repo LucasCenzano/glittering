@@ -1,0 +1,372 @@
+/* Estilos para los botones de WhatsApp e Instagram */
+body, html {
+  overflow-x: hidden;
+}
+body {
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana de visualización */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+/* Estilos para imágenes en pantallas más pequeñas (móviles) */
+@media screen and (max-width: 767px) {
+  .imagenes img {
+    max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible */
+    height: auto;
+    margin: 5px 0;
+    border-radius: 0; /* Otra modificación según tus necesidades */
+  }
+
+  /* Eliminar el efecto de escala al pasar el cursor en pantallas más pequeñas */
+  .imagenes img:hover {
+    transform: none;
+  }
+
+  /* Apilar imágenes una debajo de la otra en pantallas más pequeñas */
+  .imagenes {
+    flex-direction: column;
+  }
+}
+
+
+/* Estilos para las imágenes en pantallas más grandes (escritorio) */
+@media screen and (min-width: 768px) {
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten automáticamente a la línea siguiente */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px; /* Aumenta el margen inferior para separar más las imágenes */
+  }
+
+  .imagenes img {
+    width: calc(33.33% - 20px); /* Calcula el ancho de cada imagen (33.33% del contenedor menos el margen) */
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    border-radius: 10px;
+    margin: 10px; /* Aumenta el margen para separar las imágenes */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Agrega un sombreado suave */
+  }
+
+  /* Efecto al pasar el cursor sobre las imágenes */
+  .imagenes img:hover {
+    transform: scale(1.05); /* Ajusta la escala para un efecto más suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta el sombreado al hacer hover */
+  }
+}
+
+
+
+
+.whatsapp,
+.instagram {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgb(255, 255, 255);
+}
+
+.whatsapp img,
+.instagram img {
+  width: 20px;
+  height: 20px;
+}
+
+.whatsapp {
+  right: 10px;
+  background-color: #ffffff;
+}
+
+.instagram {
+  left: 10px;
+  background-color: #ffffff;
+}
+
+.whatsapp:hover,
+.instagram:hover {
+  opacity: 0.7;
+}
+
+/* Estilos para el nombre Glittering.ok */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nombre {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dot {
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #FF69B4;
+}
+
+.ok {
+  font-size: 40px;
+  color: #FF69B4;
+}
+
+.frase {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 1px;
+  color: #FF69B4;
+}
+
+@keyframes brillo-animation {
+  0% {
+    color: #FF69B4;
+  }
+  50% {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #FF69B4;
+  }
+  100% {
+    color: #FF69B4;
+  }
+}
+
+.brillo {
+  animation: brillo-animation 2s infinite;
+}
+
+#carrito-icon {
+  position: fixed;
+  font-size: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que el carrito esté por encima de otros elementos */
+}
+
+#total-carrito {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  
+}
+
+#carrito-popup {
+  position: fixed;
+  top: 40px;
+  width: auto;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+  background-color: white;
+}
+#carrito-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+#carrito-popup p {
+  text-align: left;
+  margin-left: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+#carrito-popup button {
+  background: none;
+  border: none;
+  font-size: 12px; /* Tamaño de la fuente para hacer la cruz más pequeña */
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+}
+
+#carrito-popup button.cerrar-carrito {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+#carrito-popup button.comprar-carrito {
+  text-align: right;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+
+#carrito-container:hover #carrito-popup {
+  display: block;
+}
+
+/* Agregar estos estilos al final de tu CSS existente */
+
+/* Estilo para botones de aumentar y disminuir cantidad en el carrito */
+#lista-carrito button {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+#lista-carrito button:hover {
+  background-color: #f0f0f0;
+}
+
+.producto {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-producto button {
+  margin-top: 10px; /* Espacio entre la información del producto y el botón */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FF69B4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Añade esta propiedad */
+  box-sizing: border-box; /* Añade esta propiedad para que el ancho incluya el padding */
+  margin: 0 auto; /* Añade esta propiedad para centrar el botón */
+}
+
+
+.nombre-producto {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  flex: 1; /* Ocupa todo el espacio horizontal disponible */
+  padding: 0 10px; /* Agrega un espacio interior de 10px a cada lado */
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+
+
+
+.imagenes img {
+  max-width: 30%; /* Ajusta el ancho máximo según tus necesidades */
+  height: 25%;
+  border-radius: 10px;
+  margin: 0 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.info-producto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Añade esta propiedad para centrar el texto */
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 20px;
+  color: #000000;
+}
+
+.stock {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.stock-cantidad {
+  font-weight: bold;
+  color:#FF69B4;
+  margin-left: 5px;
+}
+
+.stock-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+
+/* Efecto al pasar el cursor sobre las imágenes */
+.imagenes img:hover {
+transform: scale(1.5);
+}
+
+/* Estilos para el buscador de productos */
+.buscar-form {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 1000; /* Asegura que la barra de búsqueda esté por encima de otros elementos */
+}
+
+.buscar-form input[type="text"] {
+  padding: 5px;
+  border: 0.3px solid #ccc;
+  border-radius: 50px;
+}
+
+.buscar-form button {
+  background-color: transparent;
+  border: none;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.buscar-form button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+  .imagenes img {
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    margin: px 0;
+  }
+
+
+.footer {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+
