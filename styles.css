@@ -31,29 +31,37 @@ body {
   }
 }
 
+
 /* Estilos para las imágenes en pantallas más grandes (escritorio) */
 @media screen and (min-width: 768px) {
   .imagenes {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten automáticamente a la línea siguiente */
     justify-content: center;
+    align-items: center;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Aumenta el margen inferior para separar más las imágenes */
   }
 
   .imagenes img {
-    max-width: 30%; /* Ajusta el ancho máximo según tus necesidades */
-    height: 25%;
+    width: calc(33.33% - 20px); /* Calcula el ancho de cada imagen (33.33% del contenedor menos el margen) */
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 10px; /* Aumenta el margen para separar las imágenes */
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Agrega un sombreado suave */
   }
 
   /* Efecto al pasar el cursor sobre las imágenes */
   .imagenes img:hover {
-    transform: scale(1.5);
+    transform: scale(1.05); /* Ajusta la escala para un efecto más suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta el sombreado al hacer hover */
   }
 }
+
+
+
 
 .whatsapp,
 .instagram {
@@ -260,7 +268,11 @@ body {
   justify-content: center;
   position: relative;
   margin-bottom: 10px;
+  flex: 1; /* Ocupa todo el espacio horizontal disponible */
+  padding: 0 10px; /* Agrega un espacio interior de 10px a cada lado */
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
 }
+
 
 
 
@@ -343,7 +355,7 @@ transform: scale(1.5);
     width: 100%;
     max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
     height: auto;
-    margin: 5px 0;
+    margin: px 0;
   }
 
 
