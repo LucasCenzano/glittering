@@ -194,7 +194,7 @@ function comprarCarrito() {
   var total = document.getElementById("total-carrito").textContent;
   mensaje += `\nTotal: ${total}`;
 
-  var enlaceWhatsApp = "https://api.whatsapp.com/send/?phone=543875142402&text=" + encodeURIComponent(mensaje);
+  var enlaceWhatsApp = "https://api.whatsapp.com/send/?phone=5493876550649&text=" + encodeURIComponent(mensaje);
 
   // Abrir el enlace de WhatsApp
   window.location.href = enlaceWhatsApp;
