@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glittering</title>
   <link rel="icon" href="glitter.jpg" type="image/x-icon">
   <link rel="shortcut icon" href="glitter.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 
-  
 <body>
   <div id="carrito-container">
     <span id="carrito-icon" onclick="mostrarCarrito()">🛒</span>
@@ -22,7 +22,7 @@
       <button class="comprar-carrito" onclick="comprarCarrito()">Compra por whatsapp</button>
     </div>
   </div>
-  
+
 
   <div class="container">
     <h1 class="nombre">Glittering<span class="dot">.</span><span class="ok">ok</span></h1>
@@ -50,492 +50,483 @@
           <button onclick="agregarAlCarrito('Glitter celeste', 1000, 13)">Agregar al carrito</button>
         </div>
       </div>
-    
-
-                <div class="producto" id="producto2">
-                  <h2 class="nombre-producto">Glitter Violeta</h2>
-                  <div class="imagenes">
-                    <img src="producto2_1.jpg" alt="Producto 2 Imagen 1" onclick="zoomImage(this)">
-                    <img src="producto2_2.jpg" alt="Producto 2 Imagen 2" onclick="zoomImage(this)">
-                  </div>
-                  <div class="info-producto">
-                    <p class="precio">$1000</p>
-                    <div class="stock">
-                      <span class="stock-label">Stock:</span>
-                      <span class="stock-cantidad">3</span>
-                      <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                    </div>
-                  </div>
-                  <button onclick="agregarAlCarrito('Glitter Violeta', 1000, 3)">Agregar al carrito</button>
-                </div>
-              
-
-              <div class="producto" id="producto24">
-                <h2 class="nombre-producto">Glitter Rojo</h2>
-                <div class="imagenes">
-                  <img src="producto24_1.jpeg" alt="Producto 24 Imagen 1" onclick="zoomImage(this)">
-                </div>
-                <div class="info-producto">
-                  <p class="precio">$1000</p>
-                  <div class="stock">
-                    <span class="stock-label">Stock:</span>
-                    <span class="stock-cantidad">2</span>
-                    <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                  </div>
-                </div>
-                <button onclick="agregarAlCarrito('Glitter Rojo', 1000, 2)">Agregar al carrito</button>
-              </div>
-            
-              
-
-              <div class="producto" id="producto3">
-                <h2 class="nombre-producto">Glitter Azul</h2>
-                <div class="imagenes">
-                  <img src="producto3_1.jpg" alt="Producto 3 Imagen 1" onclick="zoomImage(this)">
-                  <img src="producto3_2.jpg" alt="Producto 3 Imagen 2" onclick="zoomImage(this)">
-                </div>
-                <div class="info-producto">
-                  <p class="precio">$1000</p>
-                  <div class="stock">
-                    <span class="stock-label">Stock:</span>
-                    <span class="stock-cantidad">4</span>
-                    <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                  </div>
-                </div>
-                <button onclick="agregarAlCarrito('Glitter Azul', 1000, 4)">Agregar al carrito</button>
-              </div>
-            
-
-            <div class="producto" id="producto4">
-              <h2 class="nombre-producto">Glitter Naranja</h2>
-              <div class="imagenes">
-                <img src="producto4_1.jpg" alt="Producto 4 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">5</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Naranja', 1000, 5)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto5">
-              <h2 class="nombre-producto">Glitter Blanco</h2>
-              <div class="imagenes">
-                <img src="producto5_1.jpg" alt="Producto 5 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Blanco', 1000, 1)">Agregar al carrito</button>
-            </div>
-
-            <div class="producto" id="producto5">
-              <h2 class="nombre-producto">Glitter Negro</h2>
-              <div class="imagenes">
-                <img src="producto25_1.jpeg" alt="Producto 25 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">2</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Negro', 1000, 2)">Agregar al carrito</button>
-            </div>
-
-            <div class="producto" id="producto5">
-              <h2 class="nombre-producto">Glitter Dorado</h2>
-              <div class="imagenes">
-                <img src="producto26_1.jpeg" alt="Producto 26 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">2</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Dorado', 1000, 2)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto6">
-              <h2 class="nombre-producto">Glitter Verde</h2>
-              <div class="imagenes">
-                <img src="producto6_1.jpg" alt="Producto 6 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto6_2.jpg" alt="Producto 6 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Verde', 1000, 1)">Agregar al carrito</button>
-            </div>
-
-            <div class="producto" id="producto5">
-              <h2 class="nombre-producto">Glitter Multicolor</h2>
-              <div class="imagenes">
-                <img src="producto27_1.jpeg" alt="Producto 27 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Multicolor', 1000, 1)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto7">
-              <h2 class="nombre-producto">Glitter Verde Neon</h2>
-              <div class="imagenes">
-                <img src="producto7_1.jpg" alt="Producto 7 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Verde Neon', 1000, 1)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto8">
-              <h2 class="nombre-producto">Glitter Blanco Neon</h2>
-              <div class="imagenes">
-                <img src="producto8_1.jpg" alt="Producto 8 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto8_2.jpg" alt="Producto 8 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">2</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Blanco Neon', 1000, 2)">Agregar al carrito</button>
-            </div>
-            
-              
-            <div class="producto" id="producto9">
-              <h2 class="nombre-producto">Glitter Naranja Neon</h2>
-              <div class="imagenes">
-                <img src="producto9_1.jpg" alt="Producto 9 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Glitter Naranja Neon', 1000, 1)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto10">
-              <h2 class="nombre-producto">Polvo de Hadas</h2>
-              <div class="imagenes">
-                <img src="producto10_1.jpg" alt="Producto 10 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$5000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Polvo de Hadas', 5000, 1)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto11">
-              <h2 class="nombre-producto">Strass de Colores + Pegamento </h2>
-              <div class="imagenes">
-                <img src="producto11_1.jpg" alt="Producto 11 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto11_2.jpeg" alt="Producto 11 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1200</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">3</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Strass de Colores + Pegamento', 1200, 3)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto12">
-              <h2 class="nombre-producto">Strass + Pegamento </h2>
-              <div class="imagenes">
-                <img src="producto12_1.jpeg" alt="Producto 12 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto12_2.jpeg" alt="Producto 12 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1200</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">6</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Strass + Pegamento', 1200, 6)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto13">
-              <h2 class="nombre-producto">Plancha de Strass para pelo </h2>
-              <div class="imagenes">
-                <img src="producto13_1.jpeg" alt="Producto 13 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto13_2.jpeg" alt="Producto 13 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$2000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">4</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Plancha de Strass para pelo', 2000, 4)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto14">
-              <h2 class="nombre-producto">Perlitas Autohadesivas </h2>
-              <div class="imagenes">
-                <img src="producto14_1.jpeg" alt="Producto 14 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1800</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">10</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Perlitas Autohadesivas', 1800, 10)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto15">
-              <h2 class="nombre-producto">Argollitas para pelo </h2>
-              <div class="imagenes">
-                <img src="producto15_1.jpeg" alt="Producto 15 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto15_2.jpeg" alt="Producto 15 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Argollitas para pelo', 1000, 1)">Agregar al carrito</button>
-            </div>
-            
 
 
-            <div class="producto" id="producto16">
-              <h2 class="nombre-producto">Face Gems de colores </h2>
-              <div class="imagenes">
-                <img src="producto16_1.jpeg" alt="Producto 16 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1500</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">4</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Face Gems de colores', 1500, 4)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto17">
-              <h2 class="nombre-producto">Face Gems </h2>
-              <div class="imagenes">
-                <img src="producto17_1.jpeg" alt="Producto 17 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto17_2.jpeg" alt="Producto 17 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1800</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">7</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Face Gems', 1800, 7)">Agregar al carrito</button>
-            </div>
-           
-
-            <div class="producto" id="producto18">
-              <h2 class="nombre-producto">Face Gems que brillan en la ocuriodad </h2>
-              <div class="imagenes">
-                <img src="producto18_1.jpeg" alt="Producto 18 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto18_2.jpeg" alt="Producto 18 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$2000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">3</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Face Gems que brillan en la oscuridad', 2000, 2)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto23">
-              <h2 class="nombre-producto">Gemas Autoadhesivas</h2>
-              <div class="imagenes">
-                <img src="producto23_1.jpeg" alt="Producto 23 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto23_2.jpeg" alt="Producto 23 Imagen 2" onclick="zoomImage(this)">
-                <img src="producto23_3.jpeg" alt="Producto 23 Imagen 3" onclick="zoomImage(this)">
-                <img src="producto23_4.jpeg" alt="Producto 23 Imagen 4" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1800</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">6</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Gemas Autoadhesivas', 1800, 6)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto19">
-              <h2 class="nombre-producto">Strass autoadhesivo  </h2>
-              <div class="imagenes">
-                <img src="producto19_1.jpeg" alt="Producto 19 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1800</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">4</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Strass autoadhesivo ', 1800, 4)">Agregar al carrito</button>
-            </div>
-
-            
+      <div class="producto" id="producto2">
+        <h2 class="nombre-producto">Glitter Violeta</h2>
+        <div class="imagenes">
+          <img src="producto2_1.jpg" alt="Producto 2 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto2_2.jpg" alt="Producto 2 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">3</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Violeta', 1000, 3)">Agregar al carrito</button>
+      </div>
 
 
-            <div class="producto" id="producto20">
-              <h2 class="nombre-producto">Pintacaritas Argentina</h2>
-              <div class="imagenes">
-                <img src="producto20_1.jpeg" alt="Producto 20 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$2000</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">6</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Pintacaritas Argentina', 2000, 6)">Agregar al carrito</button>
-            </div>
-            
-
-            <div class="producto" id="producto22">
-              <h2 class="nombre-producto">Maquillaje Argentina</h2>
-              <div class="imagenes">
-                <img src="producto22_1.jpeg" alt="Producto 22 Imagen 1" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1800</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">1</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Maquillaje Argentina', 1800, 1)">Agregar al carrito</button>
-            </div>
-            
+      <div class="producto" id="producto24">
+        <h2 class="nombre-producto">Glitter Rojo</h2>
+        <div class="imagenes">
+          <img src="producto24_1.jpeg" alt="Producto 24 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">2</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Rojo', 1000, 2)">Agregar al carrito</button>
+      </div>
 
 
 
-            <div class="producto" id="producto21">
-              <h2 class="nombre-producto">Pistolita perforadora </h2>
-              <div class="imagenes">
-                <img src="producto21_1.jpeg" alt="Producto 21 Imagen 1" onclick="zoomImage(this)">
-                <img src="producto21_2.jpeg" alt="Producto 21 Imagen 2" onclick="zoomImage(this)">
-              </div>
-              <div class="info-producto">
-                <p class="precio">$1200</p>
-                <div class="stock">
-                  <span class="stock-label">Stock:</span>
-                  <span class="stock-cantidad">6</span>
-                  <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
-                </div>
-              </div>
-              <button onclick="agregarAlCarrito('Pistolita perforadora', 1200, 6)">Agregar al carrito</button>
-            </div>
+      <div class="producto" id="producto3">
+        <h2 class="nombre-producto">Glitter Azul</h2>
+        <div class="imagenes">
+          <img src="producto3_1.jpg" alt="Producto 3 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto3_2.jpg" alt="Producto 3 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">4</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Azul', 1000, 4)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto4">
+        <h2 class="nombre-producto">Glitter Naranja</h2>
+        <div class="imagenes">
+          <img src="producto4_1.jpg" alt="Producto 4 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">5</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Naranja', 1000, 5)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto5">
+        <h2 class="nombre-producto">Glitter Blanco</h2>
+        <div class="imagenes">
+          <img src="producto5_1.jpg" alt="Producto 5 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Blanco', 1000, 1)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" id="producto5">
+        <h2 class="nombre-producto">Glitter Negro</h2>
+        <div class="imagenes">
+          <img src="producto25_1.jpeg" alt="Producto 25 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">2</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Negro', 1000, 2)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" id="producto5">
+        <h2 class="nombre-producto">Glitter Dorado</h2>
+        <div class="imagenes">
+          <img src="producto26_1.jpeg" alt="Producto 26 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">2</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Dorado', 1000, 2)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto6">
+        <h2 class="nombre-producto">Glitter Verde</h2>
+        <div class="imagenes">
+          <img src="producto6_1.jpg" alt="Producto 6 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto6_2.jpg" alt="Producto 6 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Verde', 1000, 1)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" id="producto5">
+        <h2 class="nombre-producto">Glitter Multicolor</h2>
+        <div class="imagenes">
+          <img src="producto27_1.jpeg" alt="Producto 27 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Multicolor', 1000, 1)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto7">
+        <h2 class="nombre-producto">Glitter Verde Neon</h2>
+        <div class="imagenes">
+          <img src="producto7_1.jpg" alt="Producto 7 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Verde Neon', 1000, 1)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto8">
+        <h2 class="nombre-producto">Glitter Blanco Neon</h2>
+        <div class="imagenes">
+          <img src="producto8_1.jpg" alt="Producto 8 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto8_2.jpg" alt="Producto 8 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">2</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Blanco Neon', 1000, 2)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto9">
+        <h2 class="nombre-producto">Glitter Naranja Neon</h2>
+        <div class="imagenes">
+          <img src="producto9_1.jpg" alt="Producto 9 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Glitter Naranja Neon', 1000, 1)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto10">
+        <h2 class="nombre-producto">Polvo de Hadas</h2>
+        <div class="imagenes">
+          <img src="producto10_1.jpg" alt="Producto 10 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$5000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Polvo de Hadas', 5000, 1)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto11">
+        <h2 class="nombre-producto">Strass de Colores + Pegamento </h2>
+        <div class="imagenes">
+          <img src="producto11_1.jpg" alt="Producto 11 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto11_2.jpeg" alt="Producto 11 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1200</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">3</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Strass de Colores + Pegamento', 1200, 3)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto12">
+        <h2 class="nombre-producto">Strass + Pegamento </h2>
+        <div class="imagenes">
+          <img src="producto12_1.jpeg" alt="Producto 12 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto12_2.jpeg" alt="Producto 12 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1200</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">6</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Strass + Pegamento', 1200, 6)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto13">
+        <h2 class="nombre-producto">Plancha de Strass para pelo </h2>
+        <div class="imagenes">
+          <img src="producto13_1.jpeg" alt="Producto 13 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto13_2.jpeg" alt="Producto 13 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$2000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">4</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Plancha de Strass para pelo', 2000, 4)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto14">
+        <h2 class="nombre-producto">Perlitas Autohadesivas </h2>
+        <div class="imagenes">
+          <img src="producto14_1.jpeg" alt="Producto 14 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1800</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">10</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Perlitas Autohadesivas', 1800, 10)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto15">
+        <h2 class="nombre-producto">Argollitas para pelo </h2>
+        <div class="imagenes">
+          <img src="producto15_1.jpeg" alt="Producto 15 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto15_2.jpeg" alt="Producto 15 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">0</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Argollitas para pelo', 1000, 1)">Agregar al carrito</button>
+      </div>
+
+
+
+      <div class="producto" id="producto16">
+        <h2 class="nombre-producto">Face Gems de colores </h2>
+        <div class="imagenes">
+          <img src="producto16_1.jpeg" alt="Producto 16 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1500</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">4</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Face Gems de colores', 1500, 4)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto17">
+        <h2 class="nombre-producto">Face Gems </h2>
+        <div class="imagenes">
+          <img src="producto17_1.jpeg" alt="Producto 17 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto17_2.jpeg" alt="Producto 17 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1800</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">7</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Face Gems', 1800, 7)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto18">
+        <h2 class="nombre-producto">Face Gems que brillan en la ocuriodad </h2>
+        <div class="imagenes">
+          <img src="producto18_1.jpeg" alt="Producto 18 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto18_2.jpeg" alt="Producto 18 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$2000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">3</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Face Gems que brillan en la oscuridad', 2000, 2)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto23">
+        <h2 class="nombre-producto">Gemas Autoadhesivas</h2>
+        <div class="imagenes">
+          <img src="producto23_1.jpeg" alt="Producto 23 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto23_2.jpeg" alt="Producto 23 Imagen 2" onclick="zoomImage(this)">
+          <img src="producto23_3.jpeg" alt="Producto 23 Imagen 3" onclick="zoomImage(this)">
+          <img src="producto23_4.jpeg" alt="Producto 23 Imagen 4" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1800</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">6</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Gemas Autoadhesivas', 1800, 6)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto19">
+        <h2 class="nombre-producto">Strass autoadhesivo </h2>
+        <div class="imagenes">
+          <img src="producto19_1.jpeg" alt="Producto 19 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1800</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">4</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Strass autoadhesivo ', 1800, 4)">Agregar al carrito</button>
+      </div>
+
+
+
+
+      <div class="producto" id="producto20">
+        <h2 class="nombre-producto">Pintacaritas Argentina</h2>
+        <div class="imagenes">
+          <img src="producto20_1.jpeg" alt="Producto 20 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$2000</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">6</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Pintacaritas Argentina', 2000, 6)">Agregar al carrito</button>
+      </div>
+
+
+      <div class="producto" id="producto22">
+        <h2 class="nombre-producto">Maquillaje Argentina</h2>
+        <div class="imagenes">
+          <img src="producto22_1.jpeg" alt="Producto 22 Imagen 1" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1800</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">1</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Maquillaje Argentina', 1800, 1)">Agregar al carrito</button>
+      </div>
+
+
+
+
+      <div class="producto" id="producto21">
+        <h2 class="nombre-producto">Pistolita perforadora </h2>
+        <div class="imagenes">
+          <img src="producto21_1.jpeg" alt="Producto 21 Imagen 1" onclick="zoomImage(this)">
+          <img src="producto21_2.jpeg" alt="Producto 21 Imagen 2" onclick="zoomImage(this)">
+        </div>
+        <div class="info-producto">
+          <p class="precio">$1200</p>
+          <div class="stock">
+            <span class="stock-label">Stock:</span>
+            <span class="stock-cantidad">6</span>
+            <img src="stock-icon.png" alt="Icono de Stock" class="stock-icon">
+          </div>
+        </div>
+        <button onclick="agregarAlCarrito('Pistolita perforadora', 1200, 6)">Agregar al carrito</button>
       </div>
     </div>
-              <!-- Botón de WhatsApp -->
-              <a class="whatsapp" href="https://api.whatsapp.com/send/?phone=5493876550649&text&type=phone_number&app_absent=0">
-                <img src="whatsapp-logo.png" alt="Logo de WhatsApp">
-              </a>
-
-              <!-- Botón de Instagram -->
-              <a class="instagram" href="https://www.instagram.com/glittering.ok/">
-                <img src="instagram-logo.png" alt="Logo de Instagram">
-              </a>
-              <div class="footer">
-                <p>Todos los medios de pago</p>
-                <p>Contáctanos</p>
-              </div>
-            </div>            
   </div>
-  <script src="script.js"></script>           
+  <!-- Botón de WhatsApp -->
+  <a class="whatsapp" href="https://api.whatsapp.com/send/?phone=5493876550649&text&type=phone_number&app_absent=0">
+    <img src="whatsapp-logo.png" alt="Logo de WhatsApp">
+  </a>
+
+  <!-- Botón de Instagram -->
+  <a class="instagram" href="https://www.instagram.com/glittering.ok/">
+    <img src="instagram-logo.png" alt="Logo de Instagram">
+  </a>
+  <div class="footer">
+    <p>Todos los medios de pago</p>
+    <p>Contáctanos</p>
+  </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
