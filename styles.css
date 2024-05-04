@@ -1,3 +1,23 @@
+#mantenimiento-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Asegúrate de que esté por encima de otros elementos */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+  text-align: center;
+  
+}
+
+/* Estilos para el mensaje de mantenimiento */
+#mantenimiento-container h1 {
+  color: rgb(255, 0, 140); /* Color rojo para resaltar */
+  font-size: 24px;
+  font-weight: bold;
+}
 /* Estilos para los botones de WhatsApp e Instagram */
 body, html {
   overflow-x: hidden;
@@ -101,6 +121,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  filter: blur(5px); /* Aplicar efecto de borrosidad al fondo */
 }
 
 .nombre {
