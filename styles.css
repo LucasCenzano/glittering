@@ -1,4 +1,5 @@
 /* Estilos para los botones de WhatsApp e Instagram */
+
 body, html {
   overflow-x: hidden;
 }
@@ -9,7 +10,10 @@ body {
   background-attachment: fixed; /* Fija la imagen de fondo */
   height: 100vh; /* Ocupa el 100% de la altura de la ventana de visualización */
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  
 }
+
+
 
 /* Estilos para imágenes en pantallas más pequeñas (móviles) */
 @media screen and (max-width: 767px) {
